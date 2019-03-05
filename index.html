@@ -117,9 +117,9 @@
 		var temp = 5;
 		$('#myNavbar').height();
 		$(window).height(); 
-		console.log($('#myNavbar').height());
+		console.log($('#myNavbar').outerHeight(true));
 		console.log($(window).height());
-		var heights = $(window).height() - $('#myNavbar').height();
+		var heights = $(window).height() - $('#myNavbar').outerHeight(true);
 		console.log(heights);
 		$('.landingPageContent').css({'height': heights + "px"})
 		    function parallaxScroll(){
